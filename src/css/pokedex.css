@@ -1,0 +1,155 @@
+body {
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    color: black;
+}
+
+body.modo-escuro {
+    background-color: grey;
+    color: black;
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 05px;
+
+}
+
+Header .Logo,
+Header .imagem-botão {
+    width: 60px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+header #Botão-de-alterar-tema {
+    background: none;
+    border: none;
+
+}
+
+header .Logo:hover,
+header .imagem-botão:hover,
+main .cartão-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 35px;
+}
+
+main .Listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+main .cartão-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+
+main .cartão-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartão-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartão-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+
+}
+
+main .cartão-pokemon .informacoes span {
+    padding: 5px;
+    font-size:  17px;
+}
+
+main .cartão-pokemon .gif{
+ width: 90px;
+ height: 80px;
+}
+
+main .cartão-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartão-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: green;
+}
+
+.fogo{
+    background-color: orange;
+}
+
+.fantasma {
+    background-color: purple;
+    color: white;
+}
+
+.veneno{
+    background-color: red;
+}
+
+.eletrico{
+    background-color: yellow;
+}
+
+.fada{
+    background-color: pink;
+}
+
+.terra{
+    background-color: brown;
+    color: white;
+}
+
+.folha{
+    background-color: greenyellow;
+}
+
+.agua{
+    background-color: aqua;
+}
+
+.normal{
+    background-color: antiquewhite;
+}
+
+.voador{
+    background-color: black;
+    color: white;
+}
+
+main .descrição{
+    max-height:  80px;
+    overflow-y:  scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
